@@ -11,9 +11,9 @@ The Towards Single Camera Human 3D-Kinematics paper uses Direct 3D Human Kinemat
 
 ## Loss function
 
-\begin{equation}
+$$
 L = \lambda_1 L_{joint} + \lambda_2 L_{marker} + \lambda_3 L_{body} + \lambda_4 L_{angle}
-\end{equation}
+$$
 
 # Results
 
