@@ -10,5 +10,7 @@ A repo for the practical of the TU Delft Deeplearning course, about the recreati
 
 # Conclusion
 
+# Running and commands
+
 # Resources
 
