@@ -13,6 +13,11 @@ ResNet-50 was first introduced in the paper **Deep Residual Learning for Image R
 While ResNet-50 and ResNet-101 certaintly outperform the other network on the image classifications, ResNeXt, introduced in the paper **Aggregated Residual Transformations for Deep Neural Networks** even outperforms the former two networks. The difference between ResNet and ResNeXt is that while ResNet uses residual blocks to learn more diverse features and data representations, ResNeXt is equipped with *cardinality*, which basically means that each residual block is repeated in the new dimention with the cardinality size and grouped convolution is used, which eventually enables ResNeXt to learn even more features and data representations than ResNet. In line with the difference in performance between ResNet-50 and ResNeXt-101, the results given in [reference for resnest] showed that ResNeXt-101 has lower error rates than ResNeXt-50. Since [reference for D3KE] did not explore the use of ResNeXt-101 for D3KE, which could potentially lead to better estimation performance as mentioned above. Hence, it is our mission in this reproduction proect to equip D3KE with ResNeXt-101 and test it.
 
 With our mouthful explanations for ResNet, ResNeXt and our motivations having been explained, it is time to dive into the details of the network structures of D3KE and how the backbone network is used in the network.
+
+# How does D3KE work?
+![image](https://user-images.githubusercontent.com/104576899/234027838-11b4e92e-5fe1-4a5f-abb9-3866960eaa8a.png)
+
+
 # Method
 
 ## Network structure
