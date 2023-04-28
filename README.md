@@ -2,9 +2,9 @@
 In this blog, direct 3D human kinematic estimation (D3KE) proposed in [[1]](#1), as well as a reproduction of the paper we conducted with a slight modification to the proposed network are explained. As for the criteria of the reproduction project, we chose *New algorithm variant*.
 
 **Members of Group-42**
-Jep Brinkmann   (5882982)
-Avinash Bhat    (5726786)
-Tatsuki FUjioka (5849837)
+Jep Brinkmann   (5882982),
+Avinash Bhat    (5726786),
+Tatsuki Fujioka (5849837)
 
 
 # Introduction
