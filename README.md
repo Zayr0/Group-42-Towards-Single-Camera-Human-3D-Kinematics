@@ -15,7 +15,7 @@ While ResNet-50 and ResNet-101 certaintly outperform the other network on the im
 With our mouthful explanations for ResNet, ResNeXt and our motivations having been explained, it is time to dive into the details of the network structures of D3KE and how the backbone network is used in the network.
 
 # How does D3KE work?
-!['Overview of the proposed direct 3D human kinematics estimation (D3KE)'[[1]](#1)](https://user-images.githubusercontent.com/104576899/234027838-11b4e92e-5fe1-4a5f-abb9-3866960eaa8a.png)
+!['Overview of the proposed direct 3D human kinematics estimation (D3KE)'[[1]]](#1)](https://user-images.githubusercontent.com/104576899/234027838-11b4e92e-5fe1-4a5f-abb9-3866960eaa8a.png)
 
 Traditional pose estimation methods tend to adopt a two-stepped approach to estimating joint angles. First, a network is used to identify keypoints of the human body in theimage like hands, elbows, knees, joints, etc. These keypoints are then used to regress the pose of the body as well as the kinematics. This method seems to draw inspiration from the traditional method of Optical Motion Capture (OMC), where markers placed on the body are used to reconstruct the pose. However, this method has its drawbacks. Aside from the obvious problem that labelling all the keypoints in every image is a laborious and time-consuming process, there is also the issue that the people performing labelling tend to misidentfy the exact location of the keypoints in the image by virtue of not being experts. This can be a problem since the resulting errors in marker predictions can propogate to the next step and lead to significant deviation from the ground-truth pose.
 
