@@ -31,7 +31,7 @@ The loss function is composed of four terms as seen below:
 
 $$L = \lambda_1 L_{joint} + \lambda_2 L_{marker} + \lambda_3 L_{body} + \lambda_4 L_{angle}$$
 
-where $\lambda_1$, $\lambda_2$, $\lambda_3$ and $\lambda_4$ are weights of losses, $L_{joint}$ is the loss of joint position, $L_{marker}$ is the loss of maker position, $ L_{body}$ is the loss of body scales and $ L_{angle}$ is the loss of joint angles.
+where $\lambda_1$, $\lambda_2$, $\lambda_3$ and $\lambda_4$ are weights of losses, $L_{joint}$ is the loss of joint position, $L_{marker}$ is the loss of maker position, $L_{body}$ is the loss of body scales and $L_{angle}$ is the loss of joint angles.
 
 As the marker loss generates loss based on the distance of the marker to the estimated position of the marker, it does an indirect loss estimation of the angles as well, however they are now weighted based on the length of the body parts. As the combination of these lengths and angles of the body eventually determine the marker position. This means that the marker loss represents the cumulative loss of the angles loss.
 
