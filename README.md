@@ -37,7 +37,7 @@ As the marker loss generates loss based on the distance of the marker to the est
 
 The joint and marker losses are calculated as L1 losses relative to the root position
 
-$$L = ||(\hat(y) - \hat(y)_{root}) - (y - y_{root})||_1$$
+$$L = ||(\hat(y) - (\hat y)_{root}) - (y - y_{root})||_1$$
 
 Here, the root position is the position of the pelvis.
 In order to impose the underlying relations and constraints of the musculoskeletal model, a skeletal-model layer is added after the network during training. The network converts the predicted joint angles into marker positions and contains no learnable parameters.
