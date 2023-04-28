@@ -15,7 +15,6 @@ While ResNet-50 and ResNet-101 certainly outperform the other network on the ima
 With our mouthful explanations for ResNet, ResNeXt and our motivations having been explained, it is time to dive into the details of the network structures of D3KE and how the backbone network is used in the network.
 
 # How does D3KE work?
-![['Overview of the proposed direct 3D human kinematics estimation’ (D3KE)'[[1]](#1)]](https://user-images.githubusercontent.com/104576899/234027838-11b4e92e-5fe1-4a5f-abb9-3866960eaa8a.png)
 !['Overview of the proposed direct 3D human kinematics estimation (D3KE)'[[1]](#1)](https://user-images.githubusercontent.com/104576899/234027838-11b4e92e-5fe1-4a5f-abb9-3866960eaa8a.png)
 **Figure. 1** *"Overview of the proposed direct 3D human kinematics estimation (D3KE)"[[1]](#1)* <br>
 
@@ -30,14 +29,14 @@ The network used in the papers is composed of two main parts. First, a convoluti
 
 ## Loss function
 The loss function is composed of four terms as seen below:
-$$
-L = \lambda_1 L_{joint} + \lambda_2 L_{marker} + \lambda_3 L_{body} + \lambda_4 L_{angle}
-$$
+
+$$L = \lambda_1 L_{joint} + \lambda_2 L_{marker} + \lambda_3 L_{body} + \lambda_4 L_{angle}$$
+
 where $\lambda_1$, $\lambda_2$, $\lambda_3$ and $\lambda_4$ are weights of losses, $L_{joint}$ is the loss of joint position, $L_{marker}$ is the loss of maker position, $ L_{body}$ is the loss of body scales and $ L_{angle}$ is the loss of joint angles.
 The joint and marker losses are calculated as L1 losses relative to the root position
-$$
-L = ||(\hat(y) - \hat(y)_{root}) - (y - y_{root})||_1
-$$
+
+$$L = ||(\hat(y) - \hat(y)_{root}) - (y - y_{root})||_1$$
+
 Here, the root position is the position of the pelvis.
 In order to impose the underlying relations and constraints of the musculoskeletal model, a skeletal-model layer is added after the network during training. The network converts the predicted joint angles into marker positions and contains no learnable parameters.
 
