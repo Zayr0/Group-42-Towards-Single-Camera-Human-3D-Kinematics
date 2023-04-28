@@ -1,5 +1,5 @@
 # Group-42-Towards-Single-Camera-Human-3D-Kinematics
-In this blog, direct 3D human kinematic estimation (D3KE) proposed in [[1]](#1), as well as a reproduction of the paper we conducted with a slight modification to the proposed network are explained.
+In this blog, direct 3D human kinematic estimation (D3KE) proposed in [[1]](#1), as well as a reproduction of the paper we conducted with a slight modification to the proposed network are explained. As for the criteria of the reproduction project, we chose *New algorithm variant*.
 
 
 # Introduction
