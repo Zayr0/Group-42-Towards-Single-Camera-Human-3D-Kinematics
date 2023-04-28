@@ -1,6 +1,11 @@
 # Group-42-Towards-Single-Camera-Human-3D-Kinematics
 In this blog, direct 3D human kinematic estimation (D3KE) proposed in [[1]](#1), as well as a reproduction of the paper we conducted with a slight modification to the proposed network are explained. As for the criteria of the reproduction project, we chose *New algorithm variant*.
 
+**Members of Group-42**
+Jep Brinkmann   (5882982)
+Avinash Bhat    (5726786)
+Tatsuki FUjioka (5849837)
+
 
 # Introduction
 **Towards Single Camera Human 3D-Kinematics**, the paper published in 2022, proposed a method - Direct 3D Human Kinematic Estimation (D3KE) by applying a pretrained ResNeXt-50 convolutional network as the convolutional backbone and a sequential network to do temporal smoothing and to lift the pose from 2D to 3D. In our reproduction project, we replaced the convolutional ResNeXt-50 by its variant, ResNeXt101, to see whether the performance of the estimation can be improved.
